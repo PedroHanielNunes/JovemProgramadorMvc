@@ -1,0 +1,38 @@
+﻿@model AlunoModel
+<form asp-controller="Aluno" asp-action="Index" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Idade igual á:</label>
+        <div class="d-flex">
+            <input type="text" asp-for="Idade" class="form-control col-md-1 mr-3" />
+            <select class="form-select" asp-for="Operacao">
+                <option selected>Selecione uma operação!</option>
+                <option value=">">Maior</option>
+                <option value="<">Menor</option>
+                <option value="=">Igual</option>
+            </select>
+        </div>
+</form>
+<form asp-controller="Aluno" asp-action="Index" method="post">
+    <div>
+        <label for="name" class="form-label">Nome igual á:</label>
+        <div>
+            <input type="text" asp-for="Nome" class="form-control col-md-1" />
+        </div>
+    </div>
+</form>
+        <label for="name" class="form-label">Contato igual á</label>
+        <input type="text" asp-for="Contato" class="form-control col-md-1"  />
+
+    </div>
+<form>
+    <div class="text-left">
+        <button type="submit" class="btn btn-primary col-1"> Buscar</button>
+    </div>
+</form>
+<div class="text-center">
+    <a class="btn btn-primary col-1" role="button" asp-controller="Aluno" asp-action="Index">Voltar</a>
+</div>
+
+
+
+

@@ -1,0 +1,37 @@
+﻿@if (ViewData["Mensagem"] != null)
+{
+<div class="alert-danger">
+    @ViewData["Mensagem"]
+</div>}
+<div class="text-left ">
+
+    <div >
+        <h1>Dados do Aluno</h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Contato</th>
+                <th scope="col">Email</th>
+                <th scope="col">Cep</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Katia Schimidt </td>
+                <td>28 anos</td>
+                <td>(47) 99177-4897</td>
+                <td>katiaschimidt@gmail.com</td>
+                <td>88350-665</td>
+                <td><div class="text-right"> <a class="btn btn-outline-dark" role="button" asp-controller="Professor" asp-action="BuscarEndereco" asp-route-cep="88350-665">Endereço</a></div></td>
+            </tr>
+
+        </tbody>
+    </table>
+    I
+</div>
