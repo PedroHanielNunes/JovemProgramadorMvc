@@ -23,10 +23,10 @@ namespace JovemProgramadorMvc.Controllers
 
         }
         public IActionResult Index(AlunoModel filtroAluno)
-        {
+            {   
             List<AlunoModel> aluno = new();
 
-
+                
             if (filtroAluno.Idade > 0)
             {
                 aluno = _alunoRepositorio.FiltroIdade(filtroAluno.Idade, filtroAluno.Operacao);
@@ -57,7 +57,7 @@ namespace JovemProgramadorMvc.Controllers
 
         }
         public async Task<IActionResult> BuscarEndereco(string cep)
-        {
+         {
             EnderecoModel enderecoModel = new();
             try
             {
